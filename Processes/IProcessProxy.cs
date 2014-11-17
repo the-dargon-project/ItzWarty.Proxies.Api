@@ -1,4 +1,4 @@
-﻿namespace Dargon.Processes
+﻿namespace ItzWarty.Processes
 {
    public interface IProcessProxy
    {

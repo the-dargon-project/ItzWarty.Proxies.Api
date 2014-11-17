@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Dargon.IO
+namespace ItzWarty.IO
 {
    public interface IDirectoryInfo
    {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dargon.Threading {
+namespace ItzWarty.Threading {
    public interface IThread : IDisposable {
       void Start();
 
