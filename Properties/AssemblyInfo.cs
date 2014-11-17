@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("common-proxies")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("libwarty.proxies-api")]
+[assembly: AssemblyDescription("Interfaces for abstracting common static invocations.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("common-proxies")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("ItzWarty")]
+[assembly: AssemblyProduct("proxies-api")]
+[assembly: AssemblyCopyright("Copyright © ItzWarty 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
