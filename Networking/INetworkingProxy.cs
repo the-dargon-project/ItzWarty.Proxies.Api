@@ -7,11 +7,14 @@ namespace ItzWarty.Networking {
       IConnectedSocket CreateConnectedSocket(ITcpEndPoint endpoint);
 
       IListenerSocket CreateListenerSocket(int port);
+      IListenerSocket CreateListenerSocket(ITcpEndPoint endpoint);
+
       IConnectedSocket Accept(IListenerSocket listenerSocket);
 
       NetworkStream CreateNetworkStream(IConnectedSocket connectedSocket, bool ownsSocket = true); 
 
       ITcpEndPoint CreateLoopbackEndPoint(int port);
+      ITcpEndPoint CreateAnyEndPoint(int port);
       ITcpEndPoint CreateEndPoint(string host, int port);
    }
 }
