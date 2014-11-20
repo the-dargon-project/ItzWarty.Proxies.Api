@@ -2,6 +2,8 @@
 
 namespace ItzWarty.Threading {
    public interface IThreadingProxy {
+      void Sleep(int durationMilliseconds);
+      void Sleep(TimeSpan duration);
       IThread CreateThread(ThreadEntryPoint entryPoint, ThreadCreationOptions options);
       ISemaphore CreateSemaphore(int initialCount, int maximumCount);
       ICountdownEvent CreateCountdownEvent(int initialCount);
