@@ -17,8 +17,8 @@ namespace ItzWarty.Threading {
       void Wait();
       bool Wait(int milliseconds);
       bool Wait(TimeSpan timespan);
-      bool Wait(CancellationToken cancellationToken);
-      bool Wait(int milliseconds, CancellationToken cancellationToken);
-      bool Wait(TimeSpan timespan, CancellationToken cancellationToken);
+      bool Wait(ICancellationToken cancellationToken);
+      bool Wait(int milliseconds, ICancellationToken cancellationToken);
+      bool Wait(TimeSpan timespan, ICancellationToken cancellationToken);
    }
 }
