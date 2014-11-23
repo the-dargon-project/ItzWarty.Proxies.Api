@@ -13,8 +13,8 @@ namespace ItzWarty.Threading {
       bool CanBeCanceled { get; }
       void ThrowIfCancellationRequested();
 
-      void WaitForCancellation(int millisecondsTimeout);
-      void WaitForCancellation(TimeSpan timeout);
+      bool WaitForCancellation(int millisecondsTimeout);
+      bool WaitForCancellation(TimeSpan timeout);
 
       CancellationToken __InnerToken { get; }
    }
