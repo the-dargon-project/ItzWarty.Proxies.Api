@@ -1,7 +1,8 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace ItzWarty.IO {
-   public interface IStream {
+   public interface IStream : IDisposable {
       long Length { get; }
       long Position { get; set; }
       void SetLength(long value);
