@@ -1,7 +1,8 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace ItzWarty.IO {
-   public interface IBinaryWriter {
+   public interface IBinaryWriter : IDisposable {
       System.IO.BinaryWriter __Writer { get; }
 
       void Write(bool value);
