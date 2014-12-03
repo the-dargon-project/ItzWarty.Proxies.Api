@@ -11,7 +11,11 @@ namespace ItzWarty.IO
       IEnumerable<string> EnumerateDirectories(string path, string searchPattern);
       IEnumerable<string> EnumerateDirectories(string path, string searchPattern, SearchOption searchOption);
 
+      bool Exists(string path);
+
+      IFileInfo GetFileInfo(string path);
       IDirectoryInfo GetDirectoryInfo(string path);
+      IFileSystemInfo GetFileSystemInfo(string path);
       
       string ReadAllText(string path);
       void WriteAllText(string path, string contents);
@@ -20,6 +24,10 @@ namespace ItzWarty.IO
       void PrepareDirectory(string path);
       void PrepareParentDirectory(string path);
 
+      void DeleteFile(string path);
       void DeleteDirectory(string path, bool recursive = false);
+
+      void MoveFile(string source, string destination);
+      void MoveDirectory(string source, string destination);
    }
 }

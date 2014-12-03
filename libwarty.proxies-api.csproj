@@ -46,7 +46,9 @@
     <Compile Include="IO\IBinaryReader.cs" />
     <Compile Include="IO\IBinaryWriter.cs" />
     <Compile Include="IO\IDirectoryInfo.cs" />
+    <Compile Include="IO\IFileInfo.cs" />
     <Compile Include="IO\IFileStream.cs" />
+    <Compile Include="IO\IFileSystemInfo.cs" />
     <Compile Include="IO\IFileSystemProxy.cs" />
     <Compile Include="IO\IMemoryStream.cs" />
     <Compile Include="IO\IStream.cs" />
