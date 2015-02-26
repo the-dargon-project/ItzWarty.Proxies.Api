@@ -61,6 +61,7 @@
     <Compile Include="Networking\ITcpEndPointFactory.cs" />
     <Compile Include="Processes\IProcess.cs" />
     <Compile Include="Processes\IProcessProxy.cs" />
+    <Compile Include="GuidProxy.cs" />
     <Compile Include="Threading\ICancellationToken.cs" />
     <Compile Include="Threading\ICancellationTokenSource.cs" />
     <Compile Include="Threading\ICountdownEvent.cs" />
