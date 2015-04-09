@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ItzWarty.Threading;
+using System;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace ItzWarty.IO {
    public interface IStream : IDisposable {
@@ -12,8 +14,8 @@ namespace ItzWarty.IO {
       int Read(byte[] buffer, int offset, int count);
       // IAsyncResult BeginRead(byte[] buffer, int offset, int count, AsyncCallback callback, object state);
       // int EndRead(IAsyncResult asyncResult);
-      // Task<int> ReadAsync(byte[] buffer, int offset, int count);
-      // Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken);
+      Task<int> ReadAsync(byte[] buffer, int offset, int count);
+      Task<int> ReadAsync(byte[] buffer, int offset, int count, ICancellationToken cancellationToken);
 
       bool CanSeek { get; }
       long Seek(long offset, SeekOrigin origin);
@@ -23,8 +25,8 @@ namespace ItzWarty.IO {
       void Write(byte[] buffer, int offset, int count);
       // IAsyncResult BeginWrite(byte[] buffer, int offset, int count, AsyncCallback callback, object state);
       // void EndWrite(IAsyncResult asyncResult);
-      // Task WriteAsync(byte[] buffer, int offset, int count);
-      // Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken);
+      Task WriteAsync(byte[] buffer, int offset, int count);
+      Task WriteAsync(byte[] buffer, int offset, int count, ICancellationToken cancellationToken);
 
       void Flush();
       void Close();
