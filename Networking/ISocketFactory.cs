@@ -1,6 +1,4 @@
-﻿using System.Net.Sockets;
-
-namespace ItzWarty.Networking {
+﻿namespace ItzWarty.Networking {
    public interface ISocketFactory {
       IConnectedSocket CreateConnectedSocket(string host, int port);
       IConnectedSocket CreateConnectedSocket(ITcpEndPoint endpoint);

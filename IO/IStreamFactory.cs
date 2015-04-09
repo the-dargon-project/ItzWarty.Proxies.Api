@@ -1,8 +1,10 @@
 ﻿using System.IO;
+using System.Text;
 
 namespace ItzWarty.IO {
    public interface IStreamFactory {
       IStream CreateFromStream(Stream stream);
+      IStream CreateFromStream(Stream stream, bool leaveOpen);
 
       IFileStream CreateFileStream(string path, FileMode mode = FileMode.Open, FileAccess access = FileAccess.ReadWrite, FileShare share = FileShare.None);
 
