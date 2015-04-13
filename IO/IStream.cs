@@ -37,5 +37,7 @@ namespace ItzWarty.IO {
 
       IBinaryReader GetReader();
       IBinaryWriter GetWriter();
+      IBinaryReader Reader { get; }
+      IBinaryWriter Writer { get; }
    }
 }
